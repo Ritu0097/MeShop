@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCart</title>
+
+    <link rel="stylesheet" href="styles/myCart.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/myCart.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <a href="index.html">MeShop.</a>
+            </div>
+            <div class="links">
+                <div id="home" onclick="home()"><a>Home</a></div>
+                <div id="login" ><a href="login.html">Login</a></div>
+                <div id="signup"><a href="signup.html">Sign up</a></div>
+                <div id="my-cart" onclick="myCart()"><a>My Cart</a></div>
+                <div id="profile" onclick="profile()"><a>Profile</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>My Cart</h1>
+        <div class="container">
+            <div class="items-list" id="items-list">
+            </div>
+            <div class="checkout">
+                <h3>Checkout List</h3>
+                <div class="wrapper">
+                    <div class="checkout-list" id="checkout-list">
+                    </div>
+                </div>
+                <div class="cost-wrapper">
+                    <div class="cost">
+                        <h3>Total</h3>
+                        <div class="amount" id="total-amt">$0/-</div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" id="checkout-btn">Click To Checkout</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>

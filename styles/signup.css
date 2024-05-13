@@ -1,0 +1,32 @@
+h3{
+    font-size: 32px;
+    font-weight: 300;
+}
+main{
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form > input{
+    padding: 10px;
+    max-width: 50%;
+}
+
+#signup-btn{
+    width: fit-content;
+    background-color: black;
+    border: none;
+    padding: 10px 40px;
+    color: white;
+    margin-top: 15px;
+}
+
+@media (width <= 500px){
+    .form > input{
+        max-width: none;
+    }
+}

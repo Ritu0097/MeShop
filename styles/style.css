@@ -1,0 +1,56 @@
+body > *{
+    position: relative;
+    z-index: 10;
+}
+.home-main{
+    padding: 3rem;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 64px;
+    margin-bottom: 2rem;
+}
+
+.desc{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#login-btn, #signup-btn{
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    width: fit-content;
+    border: 1px solid black;
+}
+
+#login-btn{
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+#signup-btn{
+    background-color: white;
+    color: black;
+}
+
+.bg-img{
+    position: absolute !important;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+}
+
+@media (width <= 360px){
+    h1{
+        font-size: 48px;
+    }
+    .home-main{
+        padding: 1rem;
+    }
+    .bg-img{
+        width: 100%;
+    }
+}

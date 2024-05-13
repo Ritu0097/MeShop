@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <script defer src="scripts/shop.js"></script>
+    <script defer src="scripts/navbar.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <a href="index.html">MeShop.</a>
+            </div>
+            <div class="links">
+                <div id="home" onclick="home()"><a>Home</a></div>
+                <div id="login" ><a href="login.html">Login</a></div>
+                <div id="signup"><a href="signup.html">Sign up</a></div>
+                <div id="my-cart" onclick="myCart()"><a>My Cart</a></div>
+                <div id="profile" onclick="profile()"><a>Profile</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <aside>
+            <div class="section colors">
+                <h1 class="title">Colors</h1>
+                <div class="color cb">
+                    <input type="checkbox" name="red" id="red">
+                    <label for="red">Red</label>
+                </div>
+                <div class="color cb">
+                    <input type="checkbox" name="blue" id="blue">
+                    <label for="blue">Blue</label>
+                </div>
+                <div class="color cb">
+                    <input type="checkbox" name="green" id="green">
+                    <label for="green">Green</label>
+                </div>
+                <div class="color cb">
+                    <input type="checkbox" name="black" id="black">
+                    <label for="black">Black</label>
+                </div>
+                <div class="color cb">
+                    <input type="checkbox" name="white" id="white">
+                    <label for="white">White</label>
+                </div>
+            </div>
+            <div class="section sizes">
+                <h1 class="title">Sizes</h1>
+                <div class="sizes cb">
+                    <input type="checkbox" name="sm" id="sm">
+                    <label for="sm">S</label>
+                </div>
+                <div class="sizes cb">
+                    <input type="checkbox" name="md" id="md">
+                    <label for="md">M</label>
+                </div>
+                <div class="sizes cb">
+                    <input type="checkbox" name="lg" id="lg">
+                    <label for="lg">L</label>
+                </div>
+                <div class="sizes cb">
+                    <input type="checkbox" name="xl" id="xl">
+                    <label for="xl">XL</label>
+                </div>
+            </div>
+            <div class="section rating">
+                <h1 class="title">Rating</h1>
+                <input type="range" name="rating" id="rating" min="0" max="5" value="0">
+                <div class="label">
+                    <div class="min">0</div>
+                    <div class="max">5</div>
+                </div>
+            </div>
+            <div class="section price-range">
+                <h1 class="title">Price Range</h1>
+                <div class="price cb">
+                    <input type="checkbox" name="0_to_25" id="0_to_25" checked>
+                    <label for="0_to_25">$0 to $25</label>
+                </div>
+                <div class="price cb">
+                    <input type="checkbox" name="25_to_50" id="25_to_50" checked>
+                    <label for="25_to_50">$25 to $50</label>
+                </div>
+                <div class="price cb">
+                    <input type="checkbox" name="50_to_100" id="50_to_100" checked>
+                    <label for="50_to_100">$50 to $100</label>
+                </div>
+                <div class="price cb">
+                    <input type="checkbox" name="100+" id="100+" checked>
+                    <label for="100+">$100 onwards</label>
+                </div>
+            </div>
+            <div class="section" style="border: none;">
+                <button id="filter" type="button">Apply Filter</button>
+            </div>
+        </aside>
+        <div class="container">
+            <header>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+                <div class="section-buttons">
+                    <button type="button" onclick="showAll()" id="all">All</button>
+                    <button type="button" onclick="showMenCategory()" id="mens">Mens</button>
+                    <button type="button" onclick="showWomenCategory()" id="womens">Womens</button>
+                    <button type="button" onclick="showJewelery()" id="jewelery">Jewelery</button>
+                    <button type="button" onclick="showElectronics()" id="electronics">Electronics</button>
+                </div>
+            </header>
+            <div class="mens category">
+                <div class="category-title"><h3>Men's Clothing</h3></div>
+                <div class="item-list">
+                </div>
+            </div>
+            <div class="womens category">
+                <div class="category-title"><h3>Women's Clothing</h3></div>
+                <div class="item-list"></div>
+            </div>
+            <div class="jewelery category">
+                <div class="category-title"><h3>Jewelery</h3></div>
+                <div class="item-list"></div>
+
+            </div>
+            <div class="electronics category">
+                <div class="category-title"><h3>Electronics</h3></div>
+                <div class="item-list"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

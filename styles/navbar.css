@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    max-height: 50px;
+}
+.navbar, .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    flex-grow: .2;
+}
+.links a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.700);
+}
+.links a:hover{
+    cursor: pointer;
+}
+.brand > a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (width <= 500px){
+    nav{
+        max-height: none;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .links{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 10px;
+    }
+}

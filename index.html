@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/navbar.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="brand">
+                <a href="index.html">MeShop.</a>
+            </div>
+            <div class="links">
+                <div id="home" onclick="home()"><a>Home</a></div>
+                <div id="login" ><a href="login.html">Login</a></div>
+                <div id="signup"><a href="signup.html">Sign up</a></div>
+                <div id="my-cart" onclick="myCart()"><a>My Cart</a></div>
+                <div id="profile" onclick="profile()"><a>Profile</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="home-main">
+        <h1>MeShop.</h1>
+        <div class="desc">
+            Your First Shop built on HTML, CSS and JavaScript
+        </div>
+
+        <button id="login-btn" onclick="login()" type="button">Login</button>
+        <button id="signup-btn" onclick="signup()" type="button">Signup</button>
+    </main>
+    <img src="resources/undraw_web_shopping_re_owap 1.svg" alt="" class="bg-img">
+</body>
+</html>
